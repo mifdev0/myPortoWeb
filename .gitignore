@@ -1,0 +1,13 @@
+# OS files
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
