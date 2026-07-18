@@ -439,67 +439,78 @@
         <!-- About Section -->
         <section class="py-16 md:py-32 px-5 sm:px-6 md:px-gutter bg-background relative" id="about">
             <div class="max-w-container-max mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
                     
                     <!-- Bio Text -->
                     <div class="fade-up lg:col-span-7">
                         <span class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Tentang Saya</span>
-                        <h2 class="font-display text-3xl md:text-5xl text-primary font-bold mb-6 md:mb-8 leading-tight">Membangun Sistem Kreatif Lewat Ketekunan Kode & Eksplorasi.</h2>
-                        <div class="space-y-5 md:space-y-6 font-body text-sm md:text-base text-on-secondary-container leading-relaxed">
-                            <p>Saya memiliki ketertarikan mendalam di dunia coding bahkan sejak sebelum memasuki bangku perkuliahan. Rasa penasaran tersebut menuntun saya untuk mengambil jurusan Pendidikan Teknik Informatika di UMS, yang terbukti semakin memicu komitmen saya untuk menekuni bidang rekayasa perangkat lunak secara serius. Di waktu senggang, saya sangat gemar bereksperimen, belajar mandiri, dan mengulik berbagai inovasi teknologi baru.</p>
-                            <p>Bagi saya, pemrograman bukan sekadar menulis baris-baris perintah, melainkan sarana kreatif untuk memecahkan masalah nyata yang ada di sekitar kita. Fokus saya saat ini adalah terus mengasah kemampuan logika pemrograman dan mengintegrasikan teknologi cerdas guna melahirkan aplikasi web yang andal, efisien, dan ramah pengguna.</p>
+                        <h2 class="font-display text-3xl md:text-5xl text-primary font-bold mb-6 leading-tight">Membangun Sistem Kreatif Lewat Ketekunan Kode & Eksplorasi.</h2>
+                        <div class="space-y-5 font-body text-sm md:text-base text-on-secondary-container leading-relaxed">
+                            <p>Saya memiliki ketertarikan mendalam di dunia coding bahkan sejak sebelum memasuki bangku perkuliahan. Rasa penasaran tersebut menuntun saya mengambil jurusan Pendidikan Teknik Informatika di UMS, yang semakin memicu komitmen saya menekuni rekayasa perangkat lunak secara serius.</p>
+                            <p>Bagi saya, pemrograman bukan sekadar menulis baris-baris perintah, melainkan sarana kreatif untuk memecahkan masalah nyata. Fokus saya saat ini adalah mengasah logika pemrograman dan mengintegrasikan teknologi cerdas guna melahirkan aplikasi web yang andal, efisien, dan ramah pengguna.</p>
                         </div>
                     </div>
                     
-                    <!-- Leaderboard / Benchmark Style Graph (Referencing OpenCode model charts) -->
-                    <div class="fade-up lg:col-span-5 w-full relative select-none mt-8 lg:mt-0">
-                        <div class="bg-white/50 p-6 rounded-xl border border-primary/5 shadow-[0_8px_30px_rgba(16,24,40,0.01)] space-y-4">
-                            <!-- Leaderboard Header -->
-                            <div class="flex items-center justify-between pb-2 border-b border-primary/10 select-none">
-                                <span class="font-technical text-xs font-bold text-accent tracking-wider uppercase">Developer Benchmarks</span>
-                                <span class="font-technical text-[10px] text-primary/50 font-mono">v2026.07</span>
-                            </div>
-                            
-                            <!-- Benchmark Row 1: Experience -->
-                            <div class="space-y-1">
-                                <div class="flex justify-between items-center text-xs">
-                                    <span class="font-technical text-primary font-bold">Years of Experience</span>
-                                    <span class="font-technical text-accent font-bold">1+ Year</span>
-                                </div>
-                                <div class="h-2 w-full bg-primary/5 rounded-full overflow-hidden border border-primary/10">
-                                    <div class="h-full bg-accent rounded-full transition-all duration-1000 ease-out" style="width: 65%;"></div>
-                                </div>
-                            </div>
-
-                            <!-- Benchmark Row 2: Projects Shipped -->
-                            <div class="space-y-1">
-                                <div class="flex justify-between items-center text-xs">
-                                    <span class="font-technical text-primary font-bold">Projects Delivered</span>
-                                    <span class="font-technical text-accent font-bold">5+ Shipped</span>
-                                </div>
-                                <div class="h-2 w-full bg-primary/5 rounded-full overflow-hidden border border-primary/10">
-                                    <div class="h-full bg-accent rounded-full transition-all duration-1000 ease-out" style="width: 85%;"></div>
-                                </div>
-                            </div>
-
-                            <!-- Benchmark Row 3: Tech Stack Tools -->
-                            <div class="space-y-1">
-                                <div class="flex justify-between items-center text-xs">
-                                    <span class="font-technical text-primary font-bold">Tech Stack Tools</span>
-                                    <span class="font-technical text-accent font-bold">15+ Technologies</span>
-                                </div>
-                                <div class="h-2 w-full bg-primary/5 rounded-full overflow-hidden border border-primary/10">
-                                    <div class="h-full bg-accent rounded-full transition-all duration-1000 ease-out" style="width: 95%;"></div>
-                                </div>
-                            </div>
-
-                            <!-- Footer note in small typewriter text -->
-                            <p class="text-[9px] font-technical text-primary/45 pt-2 border-t border-primary/5 leading-relaxed">
-                                *Metrics benchmarked relative to personal project workload and professional freelance engagements.
-                            </p>
+                    <!-- RIGHT: stats tanpa card, gaya editorial -->
+                    <div class="fade-up lg:col-span-5 w-full select-none pt-1">
+                        <div class="border-b border-[#E7DEC4] pb-3.5 flex justify-between items-baseline font-technical text-xs font-bold text-accent tracking-[0.1em] uppercase">
+                            Developer Benchmarks
+                            <span class="font-technical text-[10px] md:text-xs font-mono font-medium text-on-secondary-container lowercase normal-case tracking-normal">v2026.07</span>
                         </div>
+
+                        <!-- Stat Row 1 -->
+                        <div class="py-6 border-b border-[#E7DEC4]">
+                            <div class="flex justify-between items-baseline mb-3.5">
+                                <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">5+</div>
+                                <div class="text-right">
+                                    <div class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Proyek Selesai</div>
+                                    <div class="font-body text-[11px] md:text-xs text-on-secondary-container">Personal & freelance</div>
+                                </div>
+                            </div>
+                            <div class="relative h-[2px] bg-[#E7DEC4] rounded-full">
+                                <div class="absolute left-0 top-0 h-full bg-accent rounded-full after:content-[''] after:absolute after:-right-0.5 after:top-1/2 after:-translate-y-1/2 after:w-1.5 after:h-1.5 after:bg-accent after:rounded-full" style="width: 62%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Stat Row 2 -->
+                        <div class="py-6 border-b border-[#E7DEC4]">
+                            <div class="flex justify-between items-baseline mb-3.5">
+                                <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">15+</div>
+                                <div class="text-right">
+                                    <div class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Tech Stack</div>
+                                    <div class="font-body text-[11px] md:text-xs text-on-secondary-container">Next.js, Supabase, dan lainnya</div>
+                                </div>
+                            </div>
+                            <div class="relative h-[2px] bg-[#E7DEC4] rounded-full">
+                                <div class="absolute left-0 top-0 h-full bg-accent rounded-full after:content-[''] after:absolute after:-right-0.5 after:top-1/2 after:-translate-y-1/2 after:w-1.5 after:h-1.5 after:bg-accent after:rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Stat Row 3 -->
+                        <div class="py-6">
+                            <div class="flex justify-between items-baseline mb-3.5">
+                                <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">3</div>
+                                <div class="text-right">
+                                    <div class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Domain Aktif</div>
+                                    <div class="font-body text-[11px] md:text-xs text-on-secondary-container">Akademik, organisasi, freelance</div>
+                                </div>
+                            </div>
+                            <div class="relative h-[2px] bg-[#E7DEC4] rounded-full">
+                                <div class="absolute left-0 top-0 h-full bg-accent rounded-full after:content-[''] after:absolute after:-right-0.5 after:top-1/2 after:-translate-y-1/2 after:w-1.5 after:h-1.5 after:bg-accent after:rounded-full" style="width: 45%;"></div>
+                            </div>
+                        </div>
+
+                        <p class="font-body text-[11px] md:text-xs text-on-secondary-container italic leading-relaxed mt-5">
+                            *Metrik dihitung berdasarkan beban proyek personal dan pengalaman freelance profesional.
+                        </p>
                     </div>
 
+                </div>
+
+                <!-- GITHUB CONTRIBUTION EMBED -->
+                <div class="fade-up mt-14 pt-9 border-t border-[#E7DEC4]">
+                    <div class="font-technical text-xs font-bold text-accent tracking-[0.1em] uppercase mb-4">Github Activity</div>
+                    <img decoding="async" src="https://ghchart.rshah.org/FF5C06/mifdev0" alt="GitHub contribution graph" class="w-full h-auto block select-none" />
                 </div>
             </div>
         </section>
