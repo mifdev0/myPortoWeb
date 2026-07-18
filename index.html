@@ -252,22 +252,27 @@
             
             <!-- Desktop Links -->
             <div class="hidden md:flex items-center gap-8">
-                <a class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#about">About</a>
-                <a class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#education">Education</a>
-                <a class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#experience">Experience</a>
-                <a class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#projects">Projects</a>
-                <a class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#skills">Skills</a>
-                <a class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#certifications">Certificates</a>
+                <a data-translate="nav-about" class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#about">About</a>
+                <a data-translate="nav-education" class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#education">Education</a>
+                <a data-translate="nav-experience" class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#experience">Experience</a>
+                <a data-translate="nav-projects" class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#projects">Projects</a>
+                <a data-translate="nav-skills" class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#skills">Skills</a>
+                <a data-translate="nav-certifications" class="font-technical text-sm font-medium text-on-secondary-container hover:text-accent transition-colors" href="#certifications">Certificates</a>
             </div>
             
             <!-- CTA and CLI Trigger -->
             <div class="flex items-center gap-2.5 md:gap-4">
+                <!-- Language Toggle Button -->
+                <button onclick="toggleLanguage()" id="lang-toggle-btn" class="font-technical bg-white hover:bg-primary/5 text-primary border border-primary/10 px-2.5 py-1.5 rounded-full text-xs font-bold transition-all active:scale-95 flex items-center gap-1 cursor-pointer select-none shadow-sm mr-1.5" title="Ubah Bahasa / Switch Language">
+                    <span class="material-symbols-outlined text-[14px]">language</span>
+                    <span id="lang-label">ID</span>
+                </button>
                 <!-- Terminal Trigger Button -->
                 <button id="nav-terminal-btn" class="font-technical bg-primary text-white p-2 md:p-2.5 rounded-full hover:bg-accent transition-all active:scale-95 flex items-center justify-center shadow-md shadow-primary/10 group relative" title="Buka CLI Mode (Shortcut: `)">
                     <span class="material-symbols-outlined text-[16px] md:text-[18px] group-hover:rotate-12 transition-transform">terminal</span>
                     <span class="absolute -bottom-10 right-0 hidden group-hover:block bg-[#111216] text-[10px] text-white py-1 px-2 rounded font-mono whitespace-nowrap shadow-lg border border-white/10 z-50">Press ` key</span>
                 </button>
-                <a class="bg-accent text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full font-technical text-xs md:text-sm font-bold hover:bg-primary transition-all active:scale-95 shadow-md shadow-accent/10" href="#contact">Let's Talk</a>
+                <a data-translate="nav-cta" class="bg-accent text-white px-4 py-2 md:px-6 md:py-2.5 rounded-full font-technical text-xs md:text-sm font-bold hover:bg-primary transition-all active:scale-95 shadow-md shadow-accent/10" href="#contact">Let's Talk</a>
                 
                 <!-- Mobile menu trigger -->
                 <button class="md:hidden p-1.5 text-primary flex items-center justify-center" id="mobile-menu-btn">
@@ -278,12 +283,12 @@
         
         <!-- Mobile Dropdown -->
         <div id="mobile-nav-menu" class="hidden md:hidden max-w-container-max mx-auto mt-2 bg-white/95 backdrop-blur-md rounded-2xl border border-primary/5 p-5 shadow-xl flex flex-col gap-3">
-            <a class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#about">About</a>
-            <a class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#education">Education</a>
-            <a class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#experience">Experience</a>
-            <a class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#projects">Projects</a>
-            <a class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#skills">Skills</a>
-            <a class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5" href="#certifications">Certificates</a>
+            <a data-translate="nav-about" class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#about">About</a>
+            <a data-translate="nav-education" class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#education">Education</a>
+            <a data-translate="nav-experience" class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#experience">Experience</a>
+            <a data-translate="nav-projects" class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#projects">Projects</a>
+            <a data-translate="nav-skills" class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5 border-b border-primary/5" href="#skills">Skills</a>
+            <a data-translate="nav-certifications" class="font-technical text-sm font-semibold text-primary/80 hover:text-accent transition-colors py-2.5" href="#certifications">Certificates</a>
         </div>
     </nav>
 
@@ -312,7 +317,7 @@
                     <!-- Availability Badge (Non-capsule, notebook sketch underline style) -->
                     <div class="inline-flex items-center gap-1.5 font-technical text-xs font-bold text-accent select-none border-b-2 border-dashed border-accent/25 pb-1.5 mb-6 md:mb-8">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-light"></span>
-                        Available for freelance work & collaboration
+                        <span data-translate="hero-availability">Available for freelance work & collaboration</span>
                     </div>
 
                     <!-- Main Heading -->
@@ -323,22 +328,22 @@
 
                     <!-- Subheading -->
                     <p class="font-body text-sm md:text-lg text-on-secondary-container max-w-xl mb-8 leading-relaxed px-2 sm:px-0">
-                        Halo! Saya <strong class="text-primary font-semibold">Miftahul Amri</strong>, seorang Web Developer & AI Enthusiast yang fokus merancang aplikasi web modern serta mengintegrasikan kecerdasan buatan. Menggabungkan logika Next.js dengan visual yang estetik untuk membangun produk digital yang andal dan solutif.
+                        <span data-translate="hero-sub">Halo! Saya <strong class="text-primary font-semibold">Miftahul Amri</strong>, seorang Web Developer & AI Enthusiast yang fokus merancang aplikasi web modern serta mengintegrasikan kecerdasan buatan. Menggabungkan logika Next.js dengan visual yang estetik untuk membangun produk digital yang andal dan solutif.</span>
                     </p>
 
                     <!-- CTA Actions -->
                     <div class="flex flex-col sm:flex-row gap-3 items-center mb-8 w-full sm:w-auto px-4 sm:px-0">
-                        <a class="bg-primary text-white text-center w-full sm:w-auto px-8 py-3.5 rounded-full font-technical text-sm font-bold hover:bg-accent transition-all active:scale-95 shadow-lg shadow-primary/10" href="#projects">
+                        <a data-translate="hero-cta-projects" class="bg-primary text-white text-center w-full sm:w-auto px-8 py-3.5 rounded-full font-technical text-sm font-bold hover:bg-accent transition-all active:scale-95 shadow-lg shadow-primary/10" href="#projects">
                             Lihat Project
                         </a>
-                        <a class="border border-primary text-primary text-center w-full sm:w-auto px-8 py-3.5 rounded-full font-technical text-sm font-bold hover:bg-primary hover:text-white transition-all active:scale-95" href="#contact">
+                        <a data-translate="hero-cta-contact" class="border border-primary text-primary text-center w-full sm:w-auto px-8 py-3.5 rounded-full font-technical text-sm font-bold hover:bg-primary hover:text-white transition-all active:scale-95" href="#contact">
                             Hubungi Saya
                         </a>
                     </div>
 
                     <!-- Micro Social Links -->
                     <div class="flex gap-6 items-center">
-                        <span class="font-technical text-[10px] md:text-xs text-on-secondary-container tracking-wider uppercase">Find me:</span>
+                        <span data-translate="hero-find-me" class="font-technical text-[10px] md:text-xs text-on-secondary-container tracking-wider uppercase">Find me:</span>
                         <a class="text-on-secondary-container hover:text-accent transition-colors flex items-center justify-center p-1" href="https://github.com/mifdev0/" target="_blank">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         </a>
@@ -381,7 +386,7 @@
 
                         <!-- Captions underneath the polaroid -->
                         <div class="pt-3 pb-1 md:pt-4 md:pb-2 text-center">
-                            <span class="font-display text-sm md:text-lg text-primary/70 font-semibold select-none leading-none block">Tap/Hover to swap style</span>
+                            <span data-translate="hero-portrait-caption" class="font-display text-sm md:text-lg text-primary/70 font-semibold select-none leading-none block">Tap/Hover to swap style</span>
                         </div>
                     </div>
 
@@ -391,7 +396,7 @@
                             <path d="M 10 50 Q 40 45 60 20 T 90 10" stroke-linecap="round"/>
                             <path d="M 80 5 L 90 10 L 85 20" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <span class="font-display italic text-xs text-accent mt-1 block pl-4">Hover me!</span>
+                        <span data-translate="hero-portrait-doodle" class="font-display italic text-xs text-accent mt-1 block pl-4">Hover me!</span>
                     </div>
 
 
@@ -403,7 +408,7 @@
         <!-- Partners Infinite Loop Marquee Section -->
         <section class="py-8 md:py-12 bg-white/40 border-y border-primary/5 backdrop-blur-sm overflow-hidden select-none">
             <div class="max-w-container-max mx-auto px-5 mb-4 md:mb-6 text-center">
-                <span class="font-technical text-[10px] md:text-[11px] font-bold text-on-secondary-container tracking-[0.2em] uppercase block">Collaborations & Shipped Projects</span>
+                <span data-translate="collab-title" class="font-technical text-[10px] md:text-[11px] font-bold text-on-secondary-container tracking-[0.2em] uppercase block">Collaborations & Shipped Projects</span>
             </div>
             
             <div class="marquee-container relative">
@@ -443,11 +448,11 @@
                     
                     <!-- Bio Text -->
                     <div class="fade-up lg:col-span-7">
-                        <span class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Tentang Saya</span>
-                        <h2 class="font-display text-3xl md:text-5xl text-primary font-bold mb-6 leading-tight">Membangun Sistem Kreatif Lewat Ketekunan Kode & Eksplorasi.</h2>
+                        <span data-translate="about-eyebrow" class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Tentang Saya</span>
+                        <h2 data-translate="about-title" class="font-display text-3xl md:text-5xl text-primary font-bold mb-6 leading-tight">Membangun Sistem Kreatif Lewat Ketekunan Kode & Eksplorasi.</h2>
                         <div class="space-y-5 font-body text-sm md:text-base text-on-secondary-container leading-relaxed">
-                            <p>Saya memiliki ketertarikan mendalam di dunia coding bahkan sejak sebelum memasuki bangku perkuliahan. Rasa penasaran tersebut menuntun saya mengambil jurusan Pendidikan Teknik Informatika di UMS, yang semakin memicu komitmen saya menekuni rekayasa perangkat lunak secara serius.</p>
-                            <p>Bagi saya, pemrograman bukan sekadar menulis baris-baris perintah, melainkan sarana kreatif untuk memecahkan masalah nyata. Fokus saya saat ini adalah mengasah logika pemrograman dan mengintegrasikan teknologi cerdas guna melahirkan aplikasi web yang andal, efisien, dan ramah pengguna.</p>
+                            <p data-translate="about-p1">Saya memiliki ketertarikan mendalam di dunia coding bahkan sejak sebelum memasuki bangku perkuliahan. Rasa penasaran tersebut menuntun saya mengambil jurusan Pendidikan Teknik Informatika di UMS, yang semakin memicu komitmen saya menekuni rekayasa perangkat lunak secara serius.</p>
+                            <p data-translate="about-p2">Bagi saya, pemrograman bukan sekadar menulis baris-baris perintah, melainkan sarana kreatif untuk memecahkan masalah nyata. Fokus saya saat ini adalah mengasah logika pemrograman dan mengintegrasikan teknologi cerdas guna melahirkan aplikasi web yang andal, efisien, dan ramah pengguna.</p>
                         </div>
                     </div>
                     
@@ -462,7 +467,7 @@
                             <div class="flex justify-between items-baseline mb-3.5">
                                 <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">5+</div>
                                 <div class="text-right">
-                                    <div class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Proyek Selesai</div>
+                                    <div data-translate="about-stat-completed" class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Proyek Selesai</div>
                                     <div class="font-body text-[11px] md:text-xs text-on-secondary-container">Personal & freelance</div>
                                 </div>
                             </div>
@@ -477,7 +482,7 @@
                                 <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">15+</div>
                                 <div class="text-right">
                                     <div class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Tech Stack</div>
-                                    <div class="font-body text-[11px] md:text-xs text-on-secondary-container">Next.js, Supabase, dan lainnya</div>
+                                    <div data-translate="about-stat-stack-desc" class="font-body text-[11px] md:text-xs text-on-secondary-container">Next.js, Supabase, dan lainnya</div>
                                 </div>
                             </div>
                             <div class="relative h-[2px] bg-[#E7DEC4] rounded-full">
@@ -490,8 +495,8 @@
                             <div class="flex justify-between items-baseline mb-3.5">
                                 <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">3</div>
                                 <div class="text-right">
-                                    <div class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Domain Aktif</div>
-                                    <div class="font-body text-[11px] md:text-xs text-on-secondary-container">Akademik, organisasi, freelance</div>
+                                    <div data-translate="about-stat-domain" class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Domain Aktif</div>
+                                    <div data-translate="about-stat-domain-desc" class="font-body text-[11px] md:text-xs text-on-secondary-container">Akademik, organisasi, freelance</div>
                                 </div>
                             </div>
                             <div class="relative h-[2px] bg-[#E7DEC4] rounded-full">
@@ -499,7 +504,7 @@
                             </div>
                         </div>
 
-                        <p class="font-body text-[11px] md:text-xs text-on-secondary-container italic leading-relaxed mt-5">
+                        <p data-translate="about-footnote" class="font-body text-[11px] md:text-xs text-on-secondary-container italic leading-relaxed mt-5">
                             *Metrik dihitung berdasarkan beban proyek personal dan pengalaman freelance profesional.
                         </p>
                     </div>
@@ -518,9 +523,9 @@
         <section class="py-16 md:py-32 px-5 sm:px-6 md:px-gutter bg-white/30 backdrop-blur-sm" id="education">
             <div class="max-w-3xl mx-auto">
                 <div class="text-center mb-12 md:mb-16 fade-up">
-                    <span class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Pendidikan</span>
-                    <h2 class="font-display text-3xl md:text-5xl text-primary font-bold">Latar Belakang Akademis</h2>
-                    <p class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Jejak pendidikan formal yang membentuk pola pikir terstruktur dan metodis.</p>
+                    <span data-translate="edu-eyebrow" class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Pendidikan</span>
+                    <h2 data-translate="edu-title" class="font-display text-3xl md:text-5xl text-primary font-bold">Latar Belakang Akademis</h2>
+                    <p data-translate="edu-sub" class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Jejak pendidikan formal yang membentuk pola pikir terstruktur dan metodis.</p>
                 </div>
                 
                 <!-- Education Timeline Vertical List (Fixed dots clearance spacing) -->
@@ -537,7 +542,7 @@
                         <div class="md:w-1/2 md:text-right flex flex-col md:items-end">
                             <span class="font-technical text-xs text-accent font-bold mb-1">2016 &mdash; 2019</span>
                             <h4 class="font-display text-xl md:text-2xl font-bold text-primary">MTs Arafah Bitung</h4>
-                            <p class="font-body text-xs md:text-sm text-on-secondary-container">Madrasah Tsanawiyah</p>
+                            <p data-translate="edu-mts" class="font-body text-xs md:text-sm text-on-secondary-container">Madrasah Tsanawiyah</p>
                         </div>
                         <!-- Right Block (Starts at 24px from left on mobile) -->
                         <div class="md:w-1/2 flex items-center">
@@ -554,7 +559,7 @@
                         <div class="md:w-1/2 md:order-2">
                             <span class="font-technical text-xs text-accent font-bold mb-1">2019 &mdash; 2022</span>
                             <h4 class="font-display text-xl md:text-2xl font-bold text-primary">MAs Ibnu Taimiyah Bogor</h4>
-                            <p class="font-body text-xs md:text-sm text-on-secondary-container">Madrasah Aliyah</p>
+                            <p data-translate="edu-ma" class="font-body text-xs md:text-sm text-on-secondary-container">Madrasah Aliyah</p>
                         </div>
                         <div class="md:w-1/2 md:text-right pr-2 md:pr-0 md:order-1 flex flex-col md:items-end justify-center">
                             <p class="font-body text-sm text-on-secondary-container leading-relaxed"></p>
@@ -571,7 +576,7 @@
                             <h4 class="font-display text-lg md:text-xl font-bold text-primary">
                                 Universitas Muhammadiyah Surakarta
                             </h4>
-                            <p class="font-body text-xs md:text-sm text-on-secondary-container">S1 - Pendidikan Teknik Informatika</p>
+                            <p data-translate="edu-ums" class="font-body text-xs md:text-sm text-on-secondary-container">S1 - Pendidikan Teknik Informatika</p>
                         </div>
                         <div class="md:w-1/2 flex items-center">
                             <p class="font-body text-sm text-on-secondary-container leading-relaxed"></p>
@@ -586,9 +591,9 @@
         <section class="py-16 md:py-32 px-5 sm:px-6 md:px-gutter bg-background" id="experience">
             <div class="max-w-container-max mx-auto">
                 <div class="text-center mb-12 md:mb-16 fade-up">
-                    <span class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Magang & Proyek</span>
-                    <h2 class="font-display text-3xl md:text-5xl text-primary font-bold">Log Aktivitas Profesional</h2>
-                    <p class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Jejak kontribusi rekayasa web dan bantuan dukungan IT yang telah dikerjakan.</p>
+                    <span data-translate="exp-eyebrow" class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Magang & Proyek</span>
+                    <h2 data-translate="exp-title" class="font-display text-3xl md:text-5xl text-primary font-bold">Log Aktivitas Profesional</h2>
+                    <p data-translate="exp-sub" class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Jejak kontribusi rekayasa web dan bantuan dukungan IT yang telah dikerjakan.</p>
                 </div>
                 
                 <!-- Sticky Notes/Notepads Grid Container -->
@@ -633,10 +638,10 @@
                                 <!-- Date -->
                                 <span class="font-technical text-[10px] md:text-xs font-bold text-accent tracking-widest block uppercase mb-3">JAN &mdash; FEB 2026</span>
                                 <!-- Job Title -->
-                                <h3 class="font-display text-xl font-bold text-primary group-hover:text-accent transition-colors leading-tight">Website Developer — Institusi Pendidikan</h3>
+                                <h3 data-translate="exp-mim-title" class="font-display text-xl font-bold text-primary group-hover:text-accent transition-colors leading-tight">Website Developer — Institusi Pendidikan</h3>
                                 <p class="font-technical text-[11px] text-on-secondary-container mt-1.5 font-semibold">MI Muhammadiyah Gambiranom</p>
                                 <!-- Description -->
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed mt-4">
+                                <p data-translate="exp-mim-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed mt-4">
                                     Membangun kembali website profil sekolah dasar dari nol menggunakan Next.js dan PostgreSQL untuk promosi publik menggantikan web blogspot lama yang sudah tidak aktif, serta melatih para guru sekolah selaku pengelola konten web.
                                 </p>
                             </div>
@@ -663,10 +668,10 @@
                                 <!-- Date -->
                                 <span class="font-technical text-[10px] md:text-xs font-bold text-accent tracking-widest block uppercase mb-3">2026</span>
                                 <!-- Job Title -->
-                                <h3 class="font-display text-xl font-bold text-primary group-hover:text-accent transition-colors leading-tight">Website Developer — Organisasi Mahasiswa</h3>
+                                <h3 data-translate="exp-imm-title" class="font-display text-xl font-bold text-primary group-hover:text-accent transition-colors leading-tight">Website Developer — Organisasi Mahasiswa</h3>
                                 <p class="font-technical text-[11px] text-on-secondary-container mt-1.5 font-semibold">IMM Siti Munjiyah FKIP UMS</p>
                                 <!-- Description -->
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed mt-4">
+                                <p data-translate="exp-imm-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed mt-4">
                                     Membangun kembali website portal informasi, publikasi naskah, dan berita organisasi kemahasiswaan dari nol menggantikan platform berbasis blogger lama yang sudah tidak aktif untuk mempermudah koordinasi kader secara digital.
                                 </p>
                             </div>
@@ -690,9 +695,9 @@
             <div class="max-w-container-max mx-auto">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 fade-up">
                     <div class="max-w-2xl">
-                        <span class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Proyek Pilihan</span>
-                        <h2 class="font-display text-3xl md:text-5xl text-primary font-bold">Produk Digital Hasil Karya Mandiri</h2>
-                        <p class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Kumpulan aplikasi web, platform digital sekolah, organisasi mahasiswa, dan proyek pengembangan mandiri.</p>
+                        <span data-translate="proj-eyebrow" class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Proyek Pilihan</span>
+                        <h2 data-translate="proj-title" class="font-display text-3xl md:text-5xl text-primary font-bold">Produk Digital Hasil Karya Mandiri</h2>
+                        <p data-translate="proj-sub" class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Kumpulan aplikasi web, platform digital sekolah, organisasi mahasiswa, dan proyek pengembangan mandiri.</p>
                     </div>
                     
                     <!-- Carousel Navigation Controls -->
@@ -708,7 +713,7 @@
 
                 <!-- Horizontal Scroll cue -->
                 <div class="flex justify-end gap-2 mb-6 select-none font-technical text-[10px] md:text-xs font-bold text-primary/45 uppercase tracking-wider items-center">
-                    Geser untuk melihat project lainnya <span class="material-symbols-outlined text-sm animate-pulse">arrow_forward</span>
+                    <span data-translate="proj-scroll-cue">Geser untuk melihat project lainnya</span> <span class="material-symbols-outlined text-sm animate-pulse">arrow_forward</span>
                 </div>
 
                 <!-- Horizontal Scrollable Snap Row Container -->
@@ -732,7 +737,7 @@
                                     <span class="px-2 py-0.5 bg-primary/5 rounded text-[9px] font-bold text-primary/75 font-technical uppercase">PostgreSQL</span>
                                 </div>
                                 <h3 class="font-display text-xl md:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Website MIM Gambiranom</h3>
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
+                                <p data-translate="proj-mim-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
                                     Website profil sekolah dasar terintegrasi dengan sistem CMS panel admin mandiri untuk mempermudah manajemen informasi, berita, dan pengumuman sekolah.
                                 </p>
                             </div>
@@ -763,7 +768,7 @@
                                     <span class="px-2 py-0.5 bg-primary/5 rounded text-[9px] font-bold text-primary/75 font-technical uppercase">DeepSeek API</span>
                                 </div>
                                 <h3 class="font-display text-xl md:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Foundry</h3>
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
+                                <p data-translate="proj-foundry-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
                                     Personal Learning Path Builder — platform untuk membuat dan menguasai learning journey interaktif dengan dependency-aware skill tree dan AI Companion sebagai asisten belajar kontekstual.
                                 </p>
                             </div>
@@ -794,7 +799,7 @@
                                     <span class="px-2 py-0.5 bg-primary/5 rounded text-[9px] font-bold text-primary/75 font-technical uppercase">Supabase</span>
                                 </div>
                                 <h3 class="font-display text-xl md:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Website IMM SIMUN</h3>
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
+                                <p data-translate="proj-imm-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
                                     Website organisasi Pimpinan Komisariat IMM Siti Munjiyah FKIP UMS — platform untuk manajemen struktur organisasi, artikel, galeri, kontak, dan pendaftaran anggota.
                                 </p>
                             </div>
@@ -825,7 +830,7 @@
                                     <span class="px-2 py-0.5 bg-primary/5 rounded text-[9px] font-bold text-primary/75 font-technical uppercase">shadcn/ui</span>
                                 </div>
                                 <h3 class="font-display text-xl md:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Barang-Bareng</h3>
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
+                                <p data-translate="proj-barang-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
                                     Marketplace sewa barang fisik dua arah — customer bisa browsing barang, chat pemilik untuk nego harga, pesan, dan upload bukti bayar. Pemilik bisa kelola toko dan konfirmasi pembayaran.
                                 </p>
                             </div>
@@ -856,7 +861,7 @@
                                     <span class="px-2 py-0.5 bg-primary/5 rounded text-[9px] font-bold text-primary/75 font-technical uppercase">Midtrans</span>
                                 </div>
                                 <h3 class="font-display text-xl md:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">LayakBisnis</h3>
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
+                                <p data-translate="proj-layak-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
                                     Platform analisis kelayakan bisnis untuk UMKM F&B — menghitung BEP, ROI, Payback Period, Profit Margin; memberikan verdict kelayakan; dilengkapi AI Business Advisor, chatbot AI, dan payment gateway.
                                 </p>
                             </div>
@@ -887,7 +892,7 @@
                                     <span class="px-2 py-0.5 bg-primary/5 rounded text-[9px] font-bold text-primary/75 font-technical uppercase">Supabase</span>
                                 </div>
                                 <h3 class="font-display text-xl md:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">Setara</h3>
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
+                                <p data-translate="proj-setara-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
                                     Platform AI-assisted untuk pendidikan khusus (special education) — membantu guru mengidentifikasi kebutuhan belajar siswa, menyusun tujuan PPI (Program Pembelajaran Individual), analisis observasi, dan laporan naratif.
                                 </p>
                             </div>
@@ -918,7 +923,7 @@
                                     <span class="px-2 py-0.5 bg-primary/5 rounded text-[9px] font-bold text-primary/75 font-technical uppercase">Groq API</span>
                                 </div>
                                 <h3 class="font-display text-xl md:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">CT Quiz Lab</h3>
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
+                                <p data-translate="proj-ct-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
                                     Platform pembelajaran Computational Thinking (CT) interaktif berbasis project — membantu guru membuat materi/kuis (manual/AI) dan menganalisis laporan pilar CT siswa.
                                 </p>
                             </div>
@@ -949,7 +954,7 @@
                                     <span class="px-2 py-0.5 bg-primary/5 rounded text-[9px] font-bold text-primary/75 font-technical uppercase">Tailwind v4</span>
                                 </div>
                                 <h3 class="font-display text-xl md:text-2xl font-bold text-primary mb-2 group-hover:text-accent transition-colors">VibeCal</h3>
-                                <p class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
+                                <p data-translate="proj-vibecal-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed">
                                     AI-powered Calendar (The Zero-Effort Calendar) dibangun untuk Google Vibe Coding Competition. Membuat jadwal menggunakan bahasa alami (teks/suara), parsing Gemini + Groq, serta input berkas multi-format.
                                 </p>
                             </div>
@@ -1150,7 +1155,7 @@
             <div class="max-w-container-max mx-auto">
                 <div class="text-center mb-12 md:mb-16 fade-up">
                     <span class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Kredibilitas</span>
-                    <h2 class="font-display text-3xl md:text-5xl text-primary font-bold">Sertifikasi & Pencapaian</h2>
+                    <h2 data-translate="cert-eyebrow" class="font-display text-3xl md:text-5xl text-primary font-bold">Sertifikasi & Pencapaian</h2>
                     <p class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Bukti kompetensi tertulis hasil pembelajaran mandiri dan ujian terstandar.</p>
                 </div>
 
@@ -1211,7 +1216,7 @@
                 </div>
 
                 <div class="mt-10 text-center fade-up">
-                    <p class="font-body text-[11px] md:text-xs text-on-secondary-container italic">Sebagian besar sertifikat di atas diperoleh secara mandiri melalui penyelesaian studi otodidak terarah.</p>
+                    <p data-translate="cert-footnote" class="font-body text-[11px] md:text-xs text-on-secondary-container italic">Sebagian besar sertifikat di atas diperoleh secara mandiri melalui penyelesaian studi otodidak terarah.</p>
                 </div>
             </div>
         </section>
@@ -1227,16 +1232,16 @@
                     
                     <!-- Left: Invitation -->
                     <div class="lg:col-span-5 flex flex-col">
-                        <span class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 uppercase block">Mari Berkolaborasi</span>
-                        <h2 class="font-display text-3xl md:text-5xl font-bold leading-tight mb-6">Mari Diskusikan Rencana Anda.</h2>
-                        <p class="font-body text-xs md:text-sm text-white/70 mb-6 leading-relaxed">Saya sangat terbuka untuk proyek pembuatan website sekolah, platform organisasi mahasiswa, web portofolio personal, maupun kontrak freelance jangka pendek.</p>
+                        <span data-translate="contact-eyebrow" class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 uppercase block">Mari Berkolaborasi</span>
+                        <h2 data-translate="contact-title" class="font-display text-3xl md:text-5xl font-bold leading-tight mb-6">Mari Diskusikan Rencana Anda.</h2>
+                        <p data-translate="contact-sub" class="font-body text-xs md:text-sm text-white/70 mb-6 leading-relaxed">Saya sangat terbuka untuk proyek pembuatan website sekolah, platform organisasi mahasiswa, web portofolio personal, maupun kontrak freelance jangka pendek.</p>
                         
                         <!-- Pricing & Budget Note Card -->
                         <div class="mb-8 p-4 bg-white/5 border border-white/10 rounded-xl flex items-start gap-3 select-none">
                             <span class="material-symbols-outlined text-accent mt-0.5">payments</span>
                             <div>
-                                <p class="font-display text-sm font-bold text-white">Pricing & Budget Fleksibel</p>
-                                <p class="font-body text-[11px] md:text-xs text-white/70 mt-1 leading-relaxed">
+                                <p data-translate="contact-pricing-title" class="font-display text-sm font-bold text-white">Pricing & Budget Fleksibel</p>
+                                <p data-translate="contact-pricing-desc" class="font-body text-[11px] md:text-xs text-white/70 mt-1 leading-relaxed">
                                     Biaya proyek sangat fleksibel tergantung tingkat kompleksitas dan bisa menyesuaikan dengan budget Anda. Silakan konsultasikan dulu langsung secara Gratis!
                                 </p>
                             </div>
@@ -1263,20 +1268,20 @@
                         <form id="contact-form" class="space-y-4 bg-white/5 p-5 md:p-8 rounded-xl border border-white/10 backdrop-blur-sm w-full">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div>
-                                    <label class="block font-technical text-[10px] md:text-xs text-white/60 mb-2 uppercase">Nama Lengkap</label>
-                                    <input required type="text" id="form-name" class="w-full bg-[#111216]/60 border border-white/10 rounded-lg p-3 text-sm text-white outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all placeholder-white/20" placeholder="Contoh: Budi Santoso" />
+                                    <label data-translate="contact-label-name" class="block font-technical text-[10px] md:text-xs text-white/60 mb-2 uppercase">Nama Lengkap</label>
+                                    <input required type="text" id="form-name" class="w-full bg-[#111216]/60 border border-white/10 rounded-lg p-3 text-sm text-white outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all placeholder-white/20" placeholder="Contoh: Budi Santoso" data-translate="contact-placeholder-name" />
                                 </div>
                                 <div>
-                                    <label class="block font-technical text-[10px] md:text-xs text-white/60 mb-2 uppercase">Email Anda</label>
-                                    <input required type="email" id="form-email" class="w-full bg-[#111216]/60 border border-white/10 rounded-lg p-3 text-sm text-white outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all placeholder-white/20" placeholder="Contoh: budi@gmail.com" />
+                                    <label data-translate="contact-label-email" class="block font-technical text-[10px] md:text-xs text-white/60 mb-2 uppercase">Email Anda</label>
+                                    <input required type="email" id="form-email" class="w-full bg-[#111216]/60 border border-white/10 rounded-lg p-3 text-sm text-white outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all placeholder-white/20" placeholder="Contoh: budi@gmail.com" data-translate="contact-placeholder-email" />
                                 </div>
                             </div>
                             <div>
-                                <label class="block font-technical text-[10px] md:text-xs text-white/60 mb-2 uppercase">Pesan Kolaborasi</label>
-                                <textarea required id="form-message" rows="4" class="w-full bg-[#111216]/60 border border-white/10 rounded-lg p-3 text-sm text-white outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all placeholder-white/20" placeholder="Tuliskan ide proyek atau kebutuhan Anda..."></textarea>
+                                <label data-translate="contact-label-message" class="block font-technical text-[10px] md:text-xs text-white/60 mb-2 uppercase">Pesan Kolaborasi</label>
+                                <textarea required id="form-message" rows="4" class="w-full bg-[#111216]/60 border border-white/10 rounded-lg p-3 text-sm text-white outline-none focus:ring-1 focus:ring-accent focus:border-accent transition-all placeholder-white/20" placeholder="Tuliskan ide proyek atau kebutuhan Anda..." data-translate="contact-placeholder-message"></textarea>
                             </div>
                             <button type="submit" class="w-full bg-accent hover:bg-white hover:text-primary text-white font-technical text-xs md:text-sm font-bold py-3.5 rounded-full transition-all active:scale-95 shadow-lg shadow-accent/25 flex items-center justify-center gap-2">
-                                <span class="material-symbols-outlined text-[16px] md:text-[18px]">send</span> Kirim Pesan
+                                <span class="material-symbols-outlined text-[16px] md:text-[18px]">send</span> <span data-translate="contact-btn">Kirim Pesan</span>
                             </button>
                         </form>
                     </div>
@@ -1292,9 +1297,9 @@
         <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
             <div class="flex flex-col items-center md:items-start">
                 <p class="font-display text-2xl font-bold text-white mb-2">Miftahul Amri</p>
-                <p class="font-body text-xs text-white/50 max-w-sm">© 2026 Miftahul Amri. Dirancang dengan estetika kertas & tinta buatan Stitch.</p>
+                <p data-translate="footer-caption" class="font-body text-xs text-white/50 max-w-sm">© 2026 Miftahul Amri. Dirancang dengan estetika kertas & tinta buatan Stitch.</p>
                 <span class="font-technical text-[9px] md:text-[10px] text-accent/80 block mt-2">
-                    Psst &mdash; coba klik icon <span class="font-mono bg-white/10 px-1 py-0.5 rounded text-white cursor-pointer hover:bg-accent hover:text-white transition-colors" onclick="openTerminal()">`_`</span> di navbar atau tekan tombol backtick (`)
+                    <span data-translate="footer-tip">Psst &mdash; coba klik icon <span class="font-mono bg-white/10 px-1 py-0.5 rounded text-white cursor-pointer hover:bg-accent hover:text-white transition-colors" onclick="openTerminal()">`_`</span> di navbar atau tekan tombol backtick (`)</span>
                 </span>
             </div>
             
@@ -1730,5 +1735,200 @@
         }
     </script>
 
+
+    <!-- Translations data & logic -->
+    <script>
+        const TRANSLATIONS = {
+            id: {
+                "nav-about": "Tentang",
+                "nav-education": "Pendidikan",
+                "nav-experience": "Magang & Proyek",
+                "nav-projects": "Proyek",
+                "nav-skills": "Skills",
+                "nav-certifications": "Sertifikat",
+                "nav-cta": "Let's Talk",
+                
+                "hero-availability": "Available for freelance work & collaboration",
+                "hero-sub": "Halo! Saya <strong class=\"text-primary font-semibold\">Miftahul Amri</strong>, seorang Web Developer & AI Enthusiast yang fokus merancang aplikasi web modern serta mengintegrasikan kecerdasan buatan. Menggabungkan logika Next.js dengan visual yang estetik untuk membangun produk digital yang andal dan solutif.",
+                "hero-cta-projects": "Lihat Project",
+                "hero-cta-contact": "Hubungi Saya",
+                "hero-find-me": "Find me:",
+                "hero-portrait-caption": "Tap/Hover to swap style",
+                "hero-portrait-doodle": "Hover me!",
+                
+                "collab-title": "Collaborations & Shipped Projects",
+                
+                "about-eyebrow": "Tentang Saya",
+                "about-title": "Membangun Sistem Kreatif Lewat Ketekunan Kode & Eksplorasi.",
+                "about-p1": "Saya memiliki ketertarikan mendalam di dunia coding bahkan sejak sebelum memasuki bangku perkuliahan. Rasa penasaran tersebut menuntun saya mengambil jurusan Pendidikan Teknik Informatika di UMS, yang semakin memicu komitmen saya menekuni rekayasa perangkat lunak secara serius.",
+                "about-p2": "Bagi saya, pemrograman bukan sekadar menulis baris-baris perintah, melainkan sarana kreatif untuk memecahkan masalah nyata. Fokus saya saat ini adalah mengasah logika pemrograman dan mengintegrasikan teknologi cerdas guna melahirkan aplikasi web yang andal, efisien, dan ramah pengguna.",
+                "about-stat-completed": "Proyek Selesai",
+                "about-stat-stack-desc": "Next.js, Supabase, dan lainnya",
+                "about-stat-domain": "Domain Aktif",
+                "about-stat-domain-desc": "Akademik, organisasi, freelance",
+                "about-footnote": "*Metrik dihitung berdasarkan beban proyek personal dan pengalaman freelance profesional.",
+                
+                "edu-eyebrow": "Pendidikan",
+                "edu-title": "Latar Belakang Akademis",
+                "edu-sub": "Jejak pendidikan formal yang membentuk pola pikir terstruktur dan metodis.",
+                "edu-mts": "Madrasah Tsanawiyah",
+                "edu-ma": "Madrasah Aliyah",
+                "edu-ums": "S1 - Pendidikan Teknik Informatika",
+                
+                "exp-eyebrow": "Magang & Proyek",
+                "exp-title": "Log Aktivitas Profesional",
+                "exp-sub": "Jejak kontribusi rekayasa web dan bantuan dukungan IT yang telah dikerjakan.",
+                "exp-dsti-desc": "Melakukan perawatan perangkat keras/lunak laboratorium, troubleshooting jaringan komputer kampus, serta membantu instalasi sistem operasi untuk civitas akademika UMS.",
+                "exp-mim-title": "Website Developer — Institusi Pendidikan",
+                "exp-mim-desc": "Membangun kembali website profil sekolah dasar dari nol menggunakan Next.js dan PostgreSQL untuk promosi publik menggantikan web blogspot lama yang sudah tidak aktif, serta melatih para guru sekolah selaku pengelola konten web.",
+                "exp-imm-title": "Website Developer — Organisasi Mahasiswa",
+                "exp-imm-desc": "Membangun kembali website portal informasi, publikasi naskah, dan berita organisasi kemahasiswaan dari nol menggantikan platform berbasis blogger lama yang sudah tidak aktif untuk mempermudah koordinasi kader secara digital.",
+                
+                "proj-eyebrow": "Proyek Pilihan",
+                "proj-title": "Produk Digital Hasil Karya Mandiri",
+                "proj-sub": "Kumpulan aplikasi web, platform digital sekolah, organisasi mahasiswa, dan proyek pengembangan mandiri.",
+                "proj-scroll-cue": "Geser untuk melihat project lainnya",
+                "proj-mim-desc": "Website profil sekolah dasar terintegrasi dengan sistem CMS panel admin mandiri untuk mempermudah manajemen informasi, berita, dan pengumuman sekolah.",
+                "proj-foundry-desc": "Personal Learning Path Builder — platform untuk membuat dan menguasai learning journey interaktif dengan dependency-aware skill tree dan AI Companion sebagai asisten belajar kontekstual.",
+                "proj-imm-desc": "Website organisasi Pimpinan Komisariat IMM Siti Munjiyah FKIP UMS — platform untuk manajemen struktur organisasi, artikel, galeri, kontak, dan pendaftaran anggota.",
+                "proj-barang-desc": "Marketplace sewa barang fisik dua arah — customer bisa browsing barang, chat pemilik untuk nego harga, pesan, dan upload bukti bayar. Pemilik bisa kelola toko dan konfirmasi pembayaran.",
+                "proj-layak-desc": "Platform analisis kelayakan bisnis untuk UMKM F&B — menghitung BEP, ROI, Payback Period, Profit Margin; memberikan verdict kelayakan; dilengkapi AI Business Advisor, chatbot AI, dan payment gateway.",
+                "proj-setara-desc": "Platform AI-assisted untuk pendidikan khusus (special education) — membantu guru mengidentifikasi kebutuhan belajar siswa, menyusun tujuan PPI (Program Pembelajaran Individual), analisis observasi, dan laporan naratif.",
+                "proj-ct-desc": "Platform pembelajaran Computational Thinking (CT) interaktif berbasis project — membantu guru membuat materi/kuis (manual/AI) dan menganalisis laporan pilar CT siswa.",
+                "proj-vibecal-desc": "AI-powered Calendar (The Zero-Effort Calendar) dibangun untuk Google Vibe Coding Competition. Membuat jadwal menggunakan bahasa alami (teks/suara), parsing Gemini + Groq, serta input berkas multi-format.",
+                
+                "cert-eyebrow": "Sertifikasi & Pencapaian",
+                "cert-footnote": "Sebagian besar sertifikat di atas diperoleh secara mandiri melalui penyelesaian studi otodidak terarah.",
+                
+                "contact-eyebrow": "Mari Berkolaborasi",
+                "contact-title": "Mari Diskusikan Rencana Anda.",
+                "contact-sub": "Saya sangat terbuka untuk proyek pembuatan website sekolah, platform organisasi mahasiswa, web portofolio personal, maupun kontrak freelance jangka pendek.",
+                "contact-pricing-title": "Pricing & Budget Fleksibel",
+                "contact-pricing-desc": "Biaya proyek sangat fleksibel tergantung tingkat kompleksitas dan bisa menyesuaikan dengan budget Anda. Silakan konsultasikan dulu langsung secara Gratis!",
+                "contact-label-name": "Nama Lengkap",
+                "contact-placeholder-name": "Contoh: Budi Santoso",
+                "contact-label-email": "Email Anda",
+                "contact-placeholder-email": "Contoh: budi@gmail.com",
+                "contact-label-message": "Pesan Kolaborasi",
+                "contact-placeholder-message": "Tuliskan ide proyek atau kebutuhan Anda...",
+                "contact-btn": "Kirim Pesan",
+                
+                "footer-caption": "© 2026 Miftahul Amri. Dirancang dengan estetika kertas & tinta buatan Stitch.",
+                "footer-tip": "Psst &mdash; coba klik icon <span class=\"font-mono bg-white/10 px-1 py-0.5 rounded text-white cursor-pointer hover:bg-accent hover:text-white transition-colors\" onclick=\"openTerminal()\">`_`</span> di navbar atau tekan tombol backtick (`)"
+            },
+            en: {
+                "nav-about": "About",
+                "nav-education": "Education",
+                "nav-experience": "Experience",
+                "nav-projects": "Projects",
+                "nav-skills": "Skills",
+                "nav-certifications": "Certificates",
+                "nav-cta": "Let's Talk",
+                
+                "hero-availability": "Available for freelance work & collaboration",
+                "hero-sub": "Hello! I am <strong class=\"text-primary font-semibold\">Miftahul Amri</strong>, a Web Developer & AI Enthusiast focused on building modern web applications and integrating artificial intelligence. Combining Next.js logic with aesthetic visuals to ship reliable and solid digital products.",
+                "hero-cta-projects": "View Projects",
+                "hero-cta-contact": "Contact Me",
+                "hero-find-me": "Find me:",
+                "hero-portrait-caption": "Tap/Hover to swap style",
+                "hero-portrait-doodle": "Hover me!",
+                
+                "collab-title": "Collaborations & Shipped Projects",
+                
+                "about-eyebrow": "About Me",
+                "about-title": "Building Creative Systems Through Code Dedication & Exploration.",
+                "about-p1": "I have had a deep passion for coding even before entering university. This curiosity led me to major in Informatics Education at UMS, which further fueled my commitment to take software engineering seriously.",
+                "about-p2": "For me, programming is not just about writing commands, but a creative medium to solve real-world problems. My current focus is refining programming logic and integrating smart technologies to deliver reliable, efficient, and user-friendly web applications.",
+                "about-stat-completed": "Completed Projects",
+                "about-stat-stack-desc": "Next.js, Supabase, and others",
+                "about-stat-domain": "Active Domains",
+                "about-stat-domain-desc": "Academic, organization, freelance",
+                "about-footnote": "*Metrics calculated based on personal project workload and professional freelance experience.",
+                
+                "edu-eyebrow": "Education",
+                "edu-title": "Academic Background",
+                "edu-sub": "Formal educational journey shaping a structured and methodical mindset.",
+                "edu-mts": "Junior High School (Madrasah Tsanawiyah)",
+                "edu-ma": "Senior High School (Madrasah Aliyah)",
+                "edu-ums": "Bachelor of Informatics Education",
+                
+                "exp-eyebrow": "Internships & Projects",
+                "exp-title": "Professional Activity Log",
+                "exp-sub": "Track record of web engineering contributions and IT helpdesk support.",
+                "exp-dsti-desc": "Performing laboratory hardware/software maintenance, troubleshooting campus computer networks, and assisting with operating system installations for the campus academic community.",
+                "exp-mim-title": "Website Developer — Educational Institution",
+                "exp-mim-desc": "Rebuilding the elementary school profile website from scratch using Next.js and PostgreSQL for public promotion to replace the inactive blogspot site, and training school teachers to manage web content.",
+                "exp-imm-title": "Website Developer — Student Organization",
+                "exp-imm-desc": "Rebuilding the information portal, manuscript publication, and student organization news website from scratch to replace the inactive blogger platform, facilitating digital student coordination.",
+                
+                "proj-eyebrow": "Featured Projects",
+                "proj-title": "Digital Products of Independent Work",
+                "proj-sub": "A collection of web applications, school digital platforms, student organizations, and independent development projects.",
+                "proj-scroll-cue": "Scroll to view more projects",
+                "proj-mim-desc": "Elementary school profile website integrated with a custom admin CMS panel to simplify the management of school information, news, and announcements.",
+                "proj-foundry-desc": "Personal Learning Path Builder — a platform to create and master interactive learning journeys with dependency-aware skill trees and a contextual AI Companion.",
+                "proj-imm-desc": "Organization website of the IMM Siti Munjiyah FKIP UMS Commissioner — a platform for managing organization structures, articles, galleries, contact, and member registration.",
+                "proj-barang-desc": "A two-way physical goods rental marketplace — customers can browse items, chat with owners for negotiations, place orders, and upload payment proof. Owners can manage their shops and confirm payments.",
+                "proj-layak-desc": "Business feasibility analysis platform for F&B MSMEs — calculating BEP, ROI, Payback Period, and Profit Margin; providing a feasibility verdict; featuring an AI Business Advisor, AI chatbot, and payment gateway.",
+                "proj-setara-desc": "AI-assisted platform for special education — helping teachers identify student learning needs, compile IEP (Individualized Education Program) goals, analyze observations, and generate narrative reports.",
+                "proj-ct-desc": "Project-based interactive Computational Thinking (CT) learning platform — helping teachers create materials/quizzes (manual/AI) and analyze reports on students' CT pillars.",
+                "proj-vibecal-desc": "AI-powered calendar (The Zero-Effort Calendar) built for the Google Vibe Coding Competition. Create schedules using natural language (text/voice), parsed by Gemini + Groq, with multi-format file uploads.",
+                
+                "cert-eyebrow": "Certifications & Achievements",
+                "cert-footnote": "Most of the certificates above were obtained independently through self-directed study.",
+                
+                "contact-eyebrow": "Let's Collaborate",
+                "contact-title": "Let's Discuss Your Plans.",
+                "contact-sub": "I am open to school website development, student organization platforms, personal portfolios, and short-term freelance contracts.",
+                "contact-pricing-title": "Flexible Pricing & Budget",
+                "contact-pricing-desc": "Project costs are highly flexible depending on complexity and can adjust to your budget. Consult now directly for Free!",
+                "contact-label-name": "Full Name",
+                "contact-placeholder-name": "E.g., Budi Santoso",
+                "contact-label-email": "Your Email",
+                "contact-placeholder-email": "E.g., budi@gmail.com",
+                "contact-label-message": "Collaboration Message",
+                "contact-placeholder-message": "Write your project idea or needs here...",
+                "contact-btn": "Send Message",
+                
+                "footer-caption": "© 2026 Miftahul Amri. Designed with paper & ink aesthetics crafted by Stitch.",
+                "footer-tip": "Psst &mdash; try clicking the <span class=\"font-mono bg-white/10 px-1 py-0.5 rounded text-white cursor-pointer hover:bg-accent hover:text-white transition-colors\" onclick=\"openTerminal()\">`_`</span> icon in the navbar or pressing the backtick key (`)"
+            }
+        };
+
+        let currentLang = localStorage.getItem('preferred-lang') || 'id';
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-translate]').forEach(el => {
+                const key = el.getAttribute('data-translate');
+                if (TRANSLATIONS[lang] && TRANSLATIONS[lang][key]) {
+                    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                        el.placeholder = TRANSLATIONS[lang][key];
+                    } else {
+                        el.innerHTML = TRANSLATIONS[lang][key];
+                    }
+                }
+            });
+            
+            // Update button label
+            const label = document.getElementById('lang-label');
+            if (label) {
+                label.textContent = lang.toUpperCase();
+            }
+            
+            document.documentElement.setAttribute('lang', lang);
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'id' ? 'en' : 'id';
+            localStorage.setItem('preferred-lang', currentLang);
+            updateLanguage(currentLang);
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', () => {
+            updateLanguage(currentLang);
+        });
+    </script>
+    
 </body>
 </html>
