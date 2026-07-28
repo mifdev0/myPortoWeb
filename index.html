@@ -137,24 +137,28 @@
         /* Infinite horizontal marquee logos */
         @keyframes marquee {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            100% { transform: translateX(-100%); }
         }
         .marquee-container {
             overflow: hidden;
             display: flex;
             user-select: none;
+            width: 100%;
         }
         .marquee-content {
             display: flex;
             flex-shrink: 0;
             justify-content: space-around;
-            min-width: 100%;
+            align-items: center;
             gap: 2.5rem;
-            animation: marquee 35s linear infinite;
+            padding-right: 2.5rem;
+            animation: marquee 25s linear infinite;
+            will-change: transform;
         }
         @media (min-width: 768px) {
             .marquee-content {
-                gap: 4rem;
+                gap: 4.5rem;
+                padding-right: 4.5rem;
             }
         }
         .marquee-container:hover .marquee-content {
@@ -430,7 +434,7 @@
                 <div class="absolute inset-y-0 left-0 w-12 md:w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none"></div>
                 <div class="absolute inset-y-0 right-0 w-12 md:w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none"></div>
 
-                <!-- Scrolling content -->
+                <!-- Scrolling content set 1 -->
                 <div class="marquee-content items-center">
                     <img decoding="async" src="./partner/foundry.webp" alt="Foundry Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
                     <img decoding="async" src="./partner/setara.webp" alt="Setara Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
@@ -441,7 +445,29 @@
                     <img decoding="async" src="./partner/vibecal.webp" alt="VibeCal Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
                     <img decoding="async" src="./partner/ct-quiz.webp" alt="CT Quiz Lab Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
                 </div>
-                <!-- Duplicate for infinite seamless scroll -->
+                <!-- Scrolling content set 2 -->
+                <div class="marquee-content items-center" aria-hidden="true">
+                    <img decoding="async" src="./partner/foundry.webp" alt="Foundry Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/setara.webp" alt="Setara Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/layakbisnis.webp" alt="LayakBisnis Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/Imm%20siti%20munjiyah.webp" alt="IMM Siti Munjiyah Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/logo%20mim%20gambiranom.webp" alt="MI Muhammadiyah Gambiranom Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/Barang%20Bareng.webp" alt="Barang Bareng Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/vibecal.webp" alt="VibeCal Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/ct-quiz.webp" alt="CT Quiz Lab Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                </div>
+                <!-- Scrolling content set 3 -->
+                <div class="marquee-content items-center" aria-hidden="true">
+                    <img decoding="async" src="./partner/foundry.webp" alt="Foundry Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/setara.webp" alt="Setara Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/layakbisnis.webp" alt="LayakBisnis Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/Imm%20siti%20munjiyah.webp" alt="IMM Siti Munjiyah Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/logo%20mim%20gambiranom.webp" alt="MI Muhammadiyah Gambiranom Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/Barang%20Bareng.webp" alt="Barang Bareng Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/vibecal.webp" alt="VibeCal Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                    <img decoding="async" src="./partner/ct-quiz.webp" alt="CT Quiz Lab Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
+                </div>
+                <!-- Scrolling content set 4 -->
                 <div class="marquee-content items-center" aria-hidden="true">
                     <img decoding="async" src="./partner/foundry.webp" alt="Foundry Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
                     <img decoding="async" src="./partner/setara.webp" alt="Setara Logo" class="partner-logo h-10 md:h-14 w-auto object-contain px-2 md:px-4" />
@@ -477,49 +503,40 @@
                         </div>
 
                         <!-- Stat Row 1 -->
-                        <div class="py-6 border-b border-[#E7DEC4]">
-                            <div class="flex justify-between items-baseline mb-3.5">
-                                <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">5+</div>
-                                <div class="text-right">
-                                    <div data-translate="about-stat-completed" class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Proyek Selesai</div>
-                                    <div class="font-body text-[11px] md:text-xs text-on-secondary-container">Personal & freelance</div>
-                                </div>
+                        <div class="py-5 border-b border-[#E7DEC4] flex justify-between items-center">
+                            <div>
+                                <div data-translate="about-stat-completed" class="font-body text-sm md:text-base font-bold text-primary mb-0.5">Proyek Dikerjakan</div>
+                                <div class="font-body text-[11px] md:text-xs text-on-secondary-container">Aplikasi web, platform sekolah & ormawa</div>
                             </div>
-                            <div class="relative h-[2px] bg-[#E7DEC4] rounded-full">
-                                <div class="absolute left-0 top-0 h-full bg-accent rounded-full after:content-[''] after:absolute after:-right-0.5 after:top-1/2 after:-translate-y-1/2 after:w-1.5 after:h-1.5 after:bg-accent after:rounded-full" style="width: 62%;"></div>
+                            <div class="text-right">
+                                <div class="font-display text-4xl sm:text-[40px] font-bold text-accent leading-none">8</div>
                             </div>
                         </div>
 
                         <!-- Stat Row 2 -->
-                        <div class="py-6 border-b border-[#E7DEC4]">
-                            <div class="flex justify-between items-baseline mb-3.5">
-                                <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">15+</div>
-                                <div class="text-right">
-                                    <div class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Tech Stack</div>
-                                    <div data-translate="about-stat-stack-desc" class="font-body text-[11px] md:text-xs text-on-secondary-container">Next.js, Supabase, dan lainnya</div>
-                                </div>
+                        <div class="py-5 border-b border-[#E7DEC4] flex justify-between items-center">
+                            <div>
+                                <div class="font-body text-sm md:text-base font-bold text-primary mb-0.5">Tech Stack & Tools</div>
+                                <div data-translate="about-stat-stack-desc" class="font-body text-[11px] md:text-xs text-on-secondary-container">Next.js, PostgreSQL, Tailwind, Supabase</div>
                             </div>
-                            <div class="relative h-[2px] bg-[#E7DEC4] rounded-full">
-                                <div class="absolute left-0 top-0 h-full bg-accent rounded-full after:content-[''] after:absolute after:-right-0.5 after:top-1/2 after:-translate-y-1/2 after:w-1.5 after:h-1.5 after:bg-accent after:rounded-full" style="width: 90%;"></div>
+                            <div class="text-right">
+                                <div class="font-display text-4xl sm:text-[40px] font-bold text-primary leading-none">15+</div>
                             </div>
                         </div>
 
                         <!-- Stat Row 3 -->
-                        <div class="py-6">
-                            <div class="flex justify-between items-baseline mb-3.5">
-                                <div class="font-display text-4xl sm:text-[40px] font-medium text-primary leading-none">3</div>
-                                <div class="text-right">
-                                    <div data-translate="about-stat-domain" class="font-body text-xs md:text-sm font-semibold text-primary mb-0.5">Domain Aktif</div>
-                                    <div data-translate="about-stat-domain-desc" class="font-body text-[11px] md:text-xs text-on-secondary-container">Akademik, organisasi, freelance</div>
-                                </div>
+                        <div class="py-5 flex justify-between items-center">
+                            <div>
+                                <div data-translate="about-stat-domain" class="font-body text-sm md:text-base font-bold text-primary mb-0.5">Domain Aktif</div>
+                                <div data-translate="about-stat-domain-desc" class="font-body text-[11px] md:text-xs text-on-secondary-container">Akademik, organisasi, freelance</div>
                             </div>
-                            <div class="relative h-[2px] bg-[#E7DEC4] rounded-full">
-                                <div class="absolute left-0 top-0 h-full bg-accent rounded-full after:content-[''] after:absolute after:-right-0.5 after:top-1/2 after:-translate-y-1/2 after:w-1.5 after:h-1.5 after:bg-accent after:rounded-full" style="width: 45%;"></div>
+                            <div class="text-right">
+                                <div class="font-display text-4xl sm:text-[40px] font-bold text-primary leading-none">3</div>
                             </div>
                         </div>
 
-                        <p data-translate="about-footnote" class="font-body text-[11px] md:text-xs text-on-secondary-container italic leading-relaxed mt-5">
-                            *Metrik dihitung berdasarkan beban proyek personal dan pengalaman freelance profesional.
+                        <p data-translate="about-footnote" class="font-body text-[11px] md:text-xs text-on-secondary-container italic leading-relaxed mt-4">
+                            *Metrik dihitung berdasarkan total portofolio aplikasi web dan proyek nyata yang telah dikerjakan.
                         </p>
                     </div>
 
@@ -542,34 +559,35 @@
                     <p data-translate="edu-sub" class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Jejak pendidikan formal yang membentuk pola pikir terstruktur dan metodis.</p>
                 </div>
                 
-                <!-- Education Timeline Vertical List (Fixed dots clearance spacing) -->
+                <!-- Education Timeline Vertical List (Reverse Chronological: Newest at top) -->
                 <div class="relative space-y-12">
                     <!-- Central Rail Line (Left aligned at 6px on mobile, centered on desktop) -->
                     <div class="absolute left-1.5 md:left-1/2 top-2 bottom-2 w-[1.5px] bg-primary/10 -translate-x-1/2"></div>
                     
-                    <!-- Entry 1 -->
+                    <!-- Entry 1: Latest (UMS 2023 - Sekarang) -->
                     <div class="relative flex flex-col md:flex-row gap-2 md:gap-12 pl-6 md:pl-0 fade-up">
-                        <!-- Marker (Centered on rail at 6px) -->
-                        <div class="absolute left-1.5 md:left-1/2 w-4 h-4 bg-primary/30 border-4 border-background rounded-full -translate-x-1/2 z-10"></div>
+                        <!-- Marker (Accent Orange Active Dot) -->
+                        <div class="absolute left-1.5 md:left-1/2 w-4 h-4 bg-accent border-4 border-background rounded-full -translate-x-1/2 z-10 pulse-orange"></div>
                         
-                        <!-- Left Block (Starts at 24px from left on mobile) -->
+                        <!-- Left Block -->
                         <div class="md:w-1/2 md:text-right flex flex-col md:items-end">
-                            <span class="font-technical text-xs text-accent font-bold mb-1">2016 &mdash; 2019</span>
-                            <h4 class="font-display text-xl md:text-2xl font-bold text-primary">MTs Arafah Bitung</h4>
-                            <p data-translate="edu-mts" class="font-body text-xs md:text-sm text-on-secondary-container">Madrasah Tsanawiyah</p>
+                            <span class="font-technical text-xs text-accent font-bold mb-1">2023 &mdash; SEKARANG</span>
+                            <h4 class="font-display text-lg md:text-xl font-bold text-primary">
+                                Universitas Muhammadiyah Surakarta
+                            </h4>
+                            <p data-translate="edu-ums" class="font-body text-xs md:text-sm text-on-secondary-container">S1 - Pendidikan Teknik Informatika</p>
                         </div>
-                        <!-- Right Block (Starts at 24px from left on mobile) -->
+                        <!-- Right Block -->
                         <div class="md:w-1/2 flex items-center">
                             <p class="font-body text-sm text-on-secondary-container leading-relaxed"></p>
                         </div>
                     </div>
                     
-                    <!-- Entry 2 -->
+                    <!-- Entry 2: Middle (MAs Ibnu Taimiyah 2019 - 2022) -->
                     <div class="relative flex flex-col md:flex-row gap-2 md:gap-12 pl-6 md:pl-0 fade-up">
                         <!-- Marker -->
                         <div class="absolute left-1.5 md:left-1/2 w-4 h-4 bg-primary/30 border-4 border-background rounded-full -translate-x-1/2 z-10"></div>
                         
-                        <!-- Order swap on desktop, stacks with 24px clearance on mobile -->
                         <div class="md:w-1/2 md:order-2">
                             <span class="font-technical text-xs text-accent font-bold mb-1">2019 &mdash; 2022</span>
                             <h4 class="font-display text-xl md:text-2xl font-bold text-primary">MAs Ibnu Taimiyah Bogor</h4>
@@ -580,17 +598,15 @@
                         </div>
                     </div>
                     
-                    <!-- Entry 3 -->
+                    <!-- Entry 3: Oldest (MTs Arafah Bitung 2016 - 2019) -->
                     <div class="relative flex flex-col md:flex-row gap-2 md:gap-12 pl-6 md:pl-0 fade-up">
                         <!-- Marker -->
-                        <div class="absolute left-1.5 md:left-1/2 w-4 h-4 bg-accent border-4 border-background rounded-full -translate-x-1/2 z-10 pulse-orange"></div>
+                        <div class="absolute left-1.5 md:left-1/2 w-4 h-4 bg-primary/30 border-4 border-background rounded-full -translate-x-1/2 z-10"></div>
                         
                         <div class="md:w-1/2 md:text-right flex flex-col md:items-end">
-                            <span class="font-technical text-xs text-accent font-bold mb-1">2023 &mdash; Sekarang</span>
-                            <h4 class="font-display text-lg md:text-xl font-bold text-primary">
-                                Universitas Muhammadiyah Surakarta
-                            </h4>
-                            <p data-translate="edu-ums" class="font-body text-xs md:text-sm text-on-secondary-container">S1 - Pendidikan Teknik Informatika</p>
+                            <span class="font-technical text-xs text-accent font-bold mb-1">2016 &mdash; 2019</span>
+                            <h4 class="font-display text-xl md:text-2xl font-bold text-primary">MTs Arafah Bitung</h4>
+                            <p data-translate="edu-mts" class="font-body text-xs md:text-sm text-on-secondary-container">Madrasah Tsanawiyah</p>
                         </div>
                         <div class="md:w-1/2 flex items-center">
                             <p class="font-body text-sm text-on-secondary-container leading-relaxed"></p>
@@ -604,23 +620,47 @@
         <!-- Experience & Activities Section (Loose-Leaf Notebook Log Style, NOT AI Slop Cards) -->
         <section class="py-16 md:py-32 px-5 sm:px-6 md:px-gutter bg-background" id="experience">
             <div class="max-w-container-max mx-auto">
-                <div class="text-center mb-12 md:mb-16 fade-up">
-                    <span data-translate="exp-eyebrow" class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Magang & Proyek</span>
-                    <h2 data-translate="exp-title" class="font-display text-3xl md:text-5xl text-primary font-bold">Log Aktivitas Profesional</h2>
-                    <p data-translate="exp-sub" class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Jejak kontribusi rekayasa web dan bantuan dukungan IT yang telah dikerjakan.</p>
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 fade-up">
+                    <div class="max-w-2xl">
+                        <span data-translate="exp-eyebrow" class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 block uppercase">Magang & Proyek</span>
+                        <h2 data-translate="exp-title" class="font-display text-3xl md:text-5xl text-primary font-bold">Log Aktivitas Profesional</h2>
+                        <p data-translate="exp-sub" class="font-body text-xs md:text-sm text-on-secondary-container mt-4">Jejak kontribusi rekayasa web dan bantuan dukungan IT yang telah dikerjakan.</p>
+                    </div>
+
+                    <!-- Experience Navigation Controls -->
+                    <div class="flex gap-3 mt-6 md:mt-0 select-none">
+                        <button onclick="scrollExpCarousel(-1)" class="w-12 h-12 rounded-full border border-primary/10 bg-white/60 hover:bg-accent hover:text-white transition-all flex items-center justify-center shadow-sm active:scale-95 text-primary group" aria-label="Scroll Experience Left">
+                            <span class="material-symbols-outlined text-lg group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+                        </button>
+                        <button onclick="scrollExpCarousel(1)" class="w-12 h-12 rounded-full border border-primary/10 bg-white/60 hover:bg-accent hover:text-white transition-all flex items-center justify-center shadow-sm active:scale-95 text-primary group" aria-label="Scroll Experience Right">
+                            <span class="material-symbols-outlined text-lg group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+                        </button>
+                    </div>
                 </div>
-                
-                <!-- Sticky Notes/Notepads Grid Container -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 pt-8 max-w-6xl mx-auto">
+
+                <!-- Continuous Sagging Clothesline Rope Decoration Container -->
+                <div class="relative max-w-6xl mx-auto pt-2 select-none">
                     
-                    <!-- Note 1: DSTI UMS (Yellow Notepad Style) -->
-                    <div class="relative bg-[#FFFEC8]/80 p-6 md:p-8 rounded-lg shadow-[0_15px_35px_rgba(16,24,40,0.04),0_5px_15px_rgba(0,0,0,0.02)] border border-primary/5 hover:shadow-[0_25px_50px_rgba(16,24,40,0.08)] hover:-translate-y-2 transition-all duration-500 ease-out transform -rotate-1 hover:rotate-0 flex flex-col justify-between min-h-[360px] group fade-up" style="background-image: linear-gradient(#10182805 1px, transparent 1px); background-size: 100% 24px;">
+                    <!-- SVG Curved Sagging Rope background -->
+                    <div class="absolute top-6 left-0 right-0 h-10 pointer-events-none z-30">
+                        <svg class="w-full h-full stroke-primary/30 fill-none" preserveAspectRatio="none" viewBox="0 0 1000 40">
+                            <!-- Sagging rope curve directly touching the top of each note's washi tape -->
+                            <path d="M 0,12 Q 150,22 300,12 T 600,12 T 900,12 T 1000,12" stroke-width="2.5" stroke-dasharray="6,2" class="opacity-60" />
+                            <path d="M 0,12 Q 150,22 300,12 T 600,12 T 900,12 T 1000,12" stroke-width="1.5" />
+                        </svg>
+                    </div>
+
+                    <!-- Sticky Notes/Notepads Horizontal Carousel Slider Container -->
+                    <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 md:gap-8 pt-8 pb-8 px-2 max-w-6xl mx-auto scrollbar-none scroll-smooth relative z-10" id="experience-carousel">
                         
-                        <!-- Washi Tape decoration -->
-                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#FF5C06]/15 backdrop-blur-[1px] border border-[#FF5C06]/10 transform -rotate-2 shadow-[0_2px_5px_rgba(0,0,0,0.02)] select-none pointer-events-none"></div>
-                        
-                        <!-- Ruled margin red line on left side -->
-                        <div class="border-l border-red-400/30 pl-4 h-full flex flex-col justify-between">
+                        <!-- Note 1: DSTI UMS (Yellow Notepad Style) -->
+                        <div class="snap-start flex-none w-[280px] sm:w-[320px] md:w-[calc((100%-4rem)/3)] bg-[#FFFEC8]/90 p-6 md:p-8 rounded-lg shadow-[0_15px_35px_rgba(16,24,40,0.04),0_5px_15px_rgba(0,0,0,0.02)] border border-primary/5 hover:shadow-[0_25px_50px_rgba(16,24,40,0.08)] hover:-translate-y-2 transition-all duration-500 ease-out transform -rotate-1 hover:rotate-0 flex flex-col justify-between min-h-[380px] group fade-up relative" style="background-image: linear-gradient(#10182805 1px, transparent 1px); background-size: 100% 24px;">
+                            
+                            <!-- Original Washi Tape decoration -->
+                            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#FF5C06]/15 backdrop-blur-[1px] border border-[#FF5C06]/10 transform -rotate-2 shadow-[0_2px_5px_rgba(0,0,0,0.02)] select-none pointer-events-none z-20"></div>
+                            
+                            <!-- Ruled margin red line on left side -->
+                            <div class="border-l border-red-400/30 pl-4 h-full flex flex-col justify-between">
                             <div>
                                 <!-- Date -->
                                 <span class="font-technical text-[10px] md:text-xs font-bold text-accent tracking-widest block uppercase mb-3">2023 &mdash; SEKARANG</span>
@@ -641,10 +681,10 @@
                     </div>
 
                     <!-- Note 2: MI Muhammadiyah Gambiranom (White Notepad Style) -->
-                    <div class="relative bg-white/95 p-6 md:p-8 rounded-lg shadow-[0_15px_35px_rgba(16,24,40,0.04),0_5px_15px_rgba(0,0,0,0.02)] border border-primary/5 hover:shadow-[0_25px_50px_rgba(16,24,40,0.08)] hover:-translate-y-2 transition-all duration-500 ease-out transform rotate-1.5 hover:rotate-0 flex flex-col justify-between min-h-[360px] group fade-up" style="background-image: linear-gradient(#10182805 1px, transparent 1px); background-size: 100% 24px; transition-delay: 100ms;">
+                    <div class="snap-start flex-none w-[280px] sm:w-[320px] md:w-[calc((100%-4rem)/3)] bg-white/95 p-6 md:p-8 rounded-lg shadow-[0_15px_35px_rgba(16,24,40,0.04),0_5px_15px_rgba(0,0,0,0.02)] border border-primary/5 hover:shadow-[0_25px_50px_rgba(16,24,40,0.08)] hover:-translate-y-2 transition-all duration-500 ease-out transform rotate-1.5 hover:rotate-0 flex flex-col justify-between min-h-[380px] group fade-up relative" style="background-image: linear-gradient(#10182805 1px, transparent 1px); background-size: 100% 24px; transition-delay: 100ms;">
                         
-                        <!-- Washi Tape decoration -->
-                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-primary/10 backdrop-blur-[1px] border border-primary/5 transform rotate-3 shadow-[0_2px_5px_rgba(0,0,0,0.02)] select-none pointer-events-none"></div>
+                        <!-- Original Washi Tape decoration -->
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-primary/10 backdrop-blur-[1px] border border-primary/5 transform rotate-3 shadow-[0_2px_5px_rgba(0,0,0,0.02)] select-none pointer-events-none z-20"></div>
                         
                         <!-- Ruled margin red line on left side -->
                         <div class="border-l border-red-400/30 pl-4 h-full flex flex-col justify-between">
@@ -671,10 +711,10 @@
                     </div>
 
                     <!-- Note 3: IMM Siti Munjiyah (Blue Notepad Style) -->
-                    <div class="relative bg-[#E3F4FF]/80 p-6 md:p-8 rounded-lg shadow-[0_15px_35px_rgba(16,24,40,0.04),0_5px_15px_rgba(0,0,0,0.02)] border border-primary/5 hover:shadow-[0_25px_50px_rgba(16,24,40,0.08)] hover:-translate-y-2 transition-all duration-500 ease-out transform -rotate-1.5 hover:rotate-0 flex flex-col justify-between min-h-[360px] group fade-up" style="background-image: linear-gradient(#10182805 1px, transparent 1px); background-size: 100% 24px; transition-delay: 200ms;">
+                    <div class="snap-start flex-none w-[280px] sm:w-[320px] md:w-[calc((100%-4rem)/3)] bg-[#E3F4FF]/80 p-6 md:p-8 rounded-lg shadow-[0_15px_35px_rgba(16,24,40,0.04),0_5px_15px_rgba(0,0,0,0.02)] border border-primary/5 hover:shadow-[0_25px_50px_rgba(16,24,40,0.08)] hover:-translate-y-2 transition-all duration-500 ease-out transform -rotate-1.5 hover:rotate-0 flex flex-col justify-between min-h-[380px] group fade-up relative" style="background-image: linear-gradient(#10182805 1px, transparent 1px); background-size: 100% 24px; transition-delay: 200ms;">
                         
-                        <!-- Washi Tape decoration -->
-                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#00c4cc]/15 backdrop-blur-[1px] border border-[#00c4cc]/10 transform -rotate-3 shadow-[0_2px_5px_rgba(0,0,0,0.02)] select-none pointer-events-none"></div>
+                        <!-- Original Washi Tape decoration -->
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#00c4cc]/15 backdrop-blur-[1px] border border-[#00c4cc]/10 transform -rotate-3 shadow-[0_2px_5px_rgba(0,0,0,0.02)] select-none pointer-events-none z-20"></div>
                         
                         <!-- Ruled margin red line on left side -->
                         <div class="border-l border-red-400/30 pl-4 h-full flex flex-col justify-between">
@@ -696,6 +736,33 @@
                                 <a href="https://imm-simun.ums.ac.id" target="_blank" class="font-technical text-xs font-semibold text-accent hover:underline flex items-center gap-1 group/link">
                                     Visit Site <span class="material-symbols-outlined text-[14px] group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform">north_east</span>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Note 4: Database Lab Assistant (Green/Mint Notepad Style) -->
+                    <div class="snap-start flex-none w-[280px] sm:w-[320px] md:w-[calc((100%-4rem)/3)] bg-[#E8F8F5]/80 p-6 md:p-8 rounded-lg shadow-[0_15px_35px_rgba(16,24,40,0.04),0_5px_15px_rgba(0,0,0,0.02)] border border-primary/5 hover:shadow-[0_25px_50px_rgba(16,24,40,0.08)] hover:-translate-y-2 transition-all duration-500 ease-out transform rotate-1 hover:rotate-0 flex flex-col justify-between min-h-[380px] group fade-up relative" style="background-image: linear-gradient(#10182805 1px, transparent 1px); background-size: 100% 24px; transition-delay: 300ms;">
+                        
+                        <!-- Original Washi Tape decoration -->
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#10B981]/15 backdrop-blur-[1px] border border-[#10B981]/10 transform rotate-2 shadow-[0_2px_5px_rgba(0,0,0,0.02)] select-none pointer-events-none z-20"></div>
+                        
+                        <!-- Ruled margin red line on left side -->
+                        <div class="border-l border-red-400/30 pl-4 h-full flex flex-col justify-between">
+                            <div>
+                                <!-- Date -->
+                                <span class="font-technical text-[10px] md:text-xs font-bold text-accent tracking-widest block uppercase mb-3">FEB &mdash; JULI 2026</span>
+                                <!-- Job Title -->
+                                <h3 data-translate="exp-dblab-title" class="font-display text-xl font-bold text-primary group-hover:text-accent transition-colors leading-tight">Asisten Laboratorium Basis Data</h3>
+                                <p class="font-technical text-[11px] text-on-secondary-container mt-1.5 font-semibold">PTI UMS &bull; Surakarta</p>
+                                <!-- Description -->
+                                <p data-translate="exp-dblab-desc" class="font-body text-xs md:text-sm text-on-secondary-container leading-relaxed mt-4">
+                                    Membimbing praktikum mahasiswa dalam pemodelan basis data, SQL, perancangan skema relasional, serta membantu evaluasi tugas dan pengelolaan kegiatan praktikum di Laboratorium Basis Data PTI UMS.
+                                </p>
+                            </div>
+                            
+                            <!-- Badges -->
+                            <div class="mt-6 pt-4 border-t border-primary/5 flex items-center justify-between">
+                                <span class="bg-primary/5 text-primary text-[9px] md:text-[10px] font-technical px-2.5 py-0.5 rounded-full font-bold uppercase select-none tracking-wider">Lab Assistant</span>
                             </div>
                         </div>
                     </div>
@@ -1248,18 +1315,7 @@
                     <div class="lg:col-span-5 flex flex-col">
                         <span data-translate="contact-eyebrow" class="font-technical text-xs font-bold text-accent tracking-[0.2em] mb-4 uppercase block">Mari Berkolaborasi</span>
                         <h2 data-translate="contact-title" class="font-display text-3xl md:text-5xl font-bold leading-tight mb-6">Mari Diskusikan Rencana Anda.</h2>
-                        <p data-translate="contact-sub" class="font-body text-xs md:text-sm text-white/70 mb-6 leading-relaxed">Saya sangat terbuka untuk proyek pembuatan website sekolah, platform organisasi mahasiswa, web portofolio personal, maupun kontrak freelance jangka pendek.</p>
-                        
-                        <!-- Pricing & Budget Note Card -->
-                        <div class="mb-8 p-4 bg-white/5 border border-white/10 rounded-xl flex items-start gap-3 select-none">
-                            <span class="material-symbols-outlined text-accent mt-0.5">payments</span>
-                            <div>
-                                <p data-translate="contact-pricing-title" class="font-display text-sm font-bold text-white">Pricing & Budget Fleksibel</p>
-                                <p data-translate="contact-pricing-desc" class="font-body text-[11px] md:text-xs text-white/70 mt-1 leading-relaxed">
-                                    Biaya proyek sangat fleksibel tergantung tingkat kompleksitas dan bisa menyesuaikan dengan budget Anda. Silakan konsultasikan dulu langsung secara Gratis!
-                                </p>
-                            </div>
-                        </div>
+                        <p data-translate="contact-sub" class="font-body text-xs md:text-sm text-white/70 mb-8 leading-relaxed">Saya sangat terbuka untuk proyek pembuatan website sekolah, platform organisasi mahasiswa, web portofolio personal, maupun kontrak freelance jangka pendek.</p>
                         
                         <div class="space-y-4">
                             <div class="flex items-center gap-3">
@@ -1524,6 +1580,66 @@
             }
         }
 
+        // EXPERIENCE CAROUSEL UX SCROLL & NAVIGATION CONTROLS
+        function scrollExpCarousel(direction) {
+            const carousel = document.getElementById('experience-carousel');
+            if (carousel) {
+                const card = carousel.querySelector('.snap-start');
+                if (card) {
+                    const cardWidth = card.offsetWidth + 32; // card width + gap
+                    carousel.scrollBy({
+                        left: direction * cardWidth,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        }
+
+        function scrollToExpIndex(index) {
+            const carousel = document.getElementById('experience-carousel');
+            if (carousel) {
+                const cards = carousel.querySelectorAll('.snap-start');
+                if (cards[index]) {
+                    cards[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                }
+            }
+        }
+
+        const expCarousel = document.getElementById('experience-carousel');
+        if (expCarousel) {
+            expCarousel.addEventListener('scroll', () => {
+                const cards = expCarousel.querySelectorAll('.snap-start');
+                const pins = document.querySelectorAll('#exp-rope-pins .exp-pin-btn');
+                
+                let activeIndex = 0;
+                let minDiff = Infinity;
+
+                cards.forEach((card, idx) => {
+                    const diff = Math.abs(card.getBoundingClientRect().left - expCarousel.getBoundingClientRect().left);
+                    if (diff < minDiff) {
+                        minDiff = diff;
+                        activeIndex = idx;
+                    }
+                });
+
+                pins.forEach((btn, idx) => {
+                    const clip = btn.querySelector('div');
+                    const text = btn.querySelector('span');
+                    if (idx === activeIndex) {
+                        clip.classList.add('bg-accent', '-translate-y-0.5', 'shadow-md');
+                        clip.classList.remove('bg-[#d4a373]');
+                        text.classList.add('text-accent');
+                        text.classList.remove('text-primary/40');
+                    } else {
+                        clip.classList.remove('bg-accent', '-translate-y-0.5', 'shadow-md');
+                        clip.classList.add('bg-[#d4a373]');
+                        text.classList.remove('text-accent');
+                        text.classList.add('text-primary/40');
+                    }
+                });
+            });
+        }
+
         const projectCarousel = document.getElementById('projects-carousel');
         const carouselProgress = document.getElementById('carousel-progress');
         if (projectCarousel && carouselProgress) {
@@ -1711,6 +1827,7 @@
 <div class="space-y-3 font-mono text-white/90">
   <p class="text-accent font-bold font-mono">RIWAYAT PENDIDIKAN & PENGALAMAN:</p>
   <p class="font-mono">&bull; <strong>2023 - Sekarang:</strong> IT Helpdesk Staff (Intern) - DSTI UMS (Surakarta)</p>
+  <p class="font-mono">&bull; <strong>Feb - Juli 2026:</strong> Asisten Laboratorium Basis Data - PTI UMS</p>
   <p class="font-mono">&bull; <strong>Jan - Feb 2026:</strong> Website Developer (KKN) - MI Muhammadiyah Gambiranom (mimgambiranom.site)</p>
   <p class="font-mono">&bull; <strong>2026:</strong> Website Developer (Organisasi) - IMM SIMUN UMS (imm-simun.ums.ac.id)</p>
   <p class="font-mono">&bull; <strong>2023 - Sekarang:</strong> S1 Pendidikan Teknik Informatika - Universitas Muhammadiyah Surakarta</p>
@@ -1776,11 +1893,11 @@
                 "about-title": "Membangun Sistem Kreatif Lewat Ketekunan Kode & Eksplorasi.",
                 "about-p1": "Saya memiliki ketertarikan mendalam di dunia coding bahkan sejak sebelum memasuki bangku perkuliahan. Rasa penasaran tersebut menuntun saya mengambil jurusan Pendidikan Teknik Informatika di UMS, yang semakin memicu komitmen saya menekuni rekayasa perangkat lunak secara serius.",
                 "about-p2": "Bagi saya, pemrograman bukan sekadar menulis baris-baris perintah, melainkan sarana kreatif untuk memecahkan masalah nyata. Fokus saya saat ini adalah mengasah logika pemrograman dan mengintegrasikan teknologi cerdas guna melahirkan aplikasi web yang andal, efisien, dan ramah pengguna.",
-                "about-stat-completed": "Proyek Selesai",
-                "about-stat-stack-desc": "Next.js, Supabase, dan lainnya",
+                "about-stat-completed": "Proyek Dikerjakan",
+                "about-stat-stack-desc": "Next.js, PostgreSQL, Tailwind, Supabase",
                 "about-stat-domain": "Domain Aktif",
                 "about-stat-domain-desc": "Akademik, organisasi, freelance",
-                "about-footnote": "*Metrik dihitung berdasarkan beban proyek personal dan pengalaman freelance profesional.",
+                "about-footnote": "*Metrik dihitung berdasarkan total portofolio aplikasi web dan proyek nyata yang telah dikerjakan.",
                 
                 "edu-eyebrow": "Pendidikan",
                 "edu-title": "Latar Belakang Akademis",
@@ -1797,6 +1914,8 @@
                 "exp-mim-desc": "Membangun kembali website profil sekolah dasar dari nol menggunakan Next.js dan PostgreSQL untuk promosi publik menggantikan web blogspot lama yang sudah tidak aktif, serta melatih para guru sekolah selaku pengelola konten web.",
                 "exp-imm-title": "Website Developer — Organisasi Mahasiswa",
                 "exp-imm-desc": "Membangun kembali website portal informasi, publikasi naskah, dan berita organisasi kemahasiswaan dari nol menggantikan platform berbasis blogger lama yang sudah tidak aktif untuk mempermudah koordinasi kader secara digital.",
+                "exp-dblab-title": "Asisten Laboratorium Basis Data",
+                "exp-dblab-desc": "Membimbing praktikum mahasiswa dalam pemodelan basis data, SQL, perancangan skema relasional, serta membantu evaluasi tugas dan pengelolaan kegiatan praktikum di Laboratorium Basis Data PTI UMS.",
                 
                 "proj-eyebrow": "Proyek Pilihan",
                 "proj-title": "Produk Digital Hasil Karya Mandiri",
@@ -1853,11 +1972,11 @@
                 "about-title": "Building Creative Systems Through Code Dedication & Exploration.",
                 "about-p1": "I have had a deep passion for coding even before entering university. This curiosity led me to major in Informatics Education at UMS, which further fueled my commitment to take software engineering seriously.",
                 "about-p2": "For me, programming is not just about writing commands, but a creative medium to solve real-world problems. My current focus is refining programming logic and integrating smart technologies to deliver reliable, efficient, and user-friendly web applications.",
-                "about-stat-completed": "Completed Projects",
-                "about-stat-stack-desc": "Next.js, Supabase, and others",
+                "about-stat-completed": "Projects Built",
+                "about-stat-stack-desc": "Next.js, PostgreSQL, Tailwind, Supabase",
                 "about-stat-domain": "Active Domains",
                 "about-stat-domain-desc": "Academic, organization, freelance",
-                "about-footnote": "*Metrics calculated based on personal project workload and professional freelance experience.",
+                "about-footnote": "*Metrics calculated based on total web application portfolio and real projects shipped.",
                 
                 "edu-eyebrow": "Education",
                 "edu-title": "Academic Background",
@@ -1874,6 +1993,8 @@
                 "exp-mim-desc": "Rebuilding the elementary school profile website from scratch using Next.js and PostgreSQL for public promotion to replace the inactive blogspot site, and training school teachers to manage web content.",
                 "exp-imm-title": "Website Developer — Student Organization",
                 "exp-imm-desc": "Rebuilding the information portal, manuscript publication, and student organization news website from scratch to replace the inactive blogger platform, facilitating digital student coordination.",
+                "exp-dblab-title": "Database Laboratory Assistant",
+                "exp-dblab-desc": "Guiding student lab sessions in database modeling, SQL, relational schema design, as well as assisting assignment evaluations and lab activity management at PTI UMS Database Lab.",
                 
                 "proj-eyebrow": "Featured Projects",
                 "proj-title": "Digital Products of Independent Work",
