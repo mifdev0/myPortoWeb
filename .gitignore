@@ -11,3 +11,6 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Original assets backup
+original-assets/
