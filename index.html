@@ -814,6 +814,11 @@
                     </div>
 
                 </div>
+
+                <!-- Custom Scroll Progress Bar for Experience -->
+                <div class="max-w-[200px] mx-auto mt-6 bg-primary/5 h-1 rounded-full overflow-hidden relative select-none">
+                    <div id="exp-carousel-progress" class="bg-accent h-full transition-all duration-300 rounded-full" style="width: 16.6%;"></div>
+                </div>
             </div>
         </section>
 
@@ -1651,37 +1656,14 @@
         }
 
         const expCarousel = document.getElementById('experience-carousel');
-        if (expCarousel) {
+        const expCarouselProgress = document.getElementById('exp-carousel-progress');
+        if (expCarousel && expCarouselProgress) {
             expCarousel.addEventListener('scroll', () => {
-                const cards = expCarousel.querySelectorAll('.snap-start');
-                const pins = document.querySelectorAll('#exp-rope-pins .exp-pin-btn');
-                
-                let activeIndex = 0;
-                let minDiff = Infinity;
-
-                cards.forEach((card, idx) => {
-                    const diff = Math.abs(card.getBoundingClientRect().left - expCarousel.getBoundingClientRect().left);
-                    if (diff < minDiff) {
-                        minDiff = diff;
-                        activeIndex = idx;
-                    }
-                });
-
-                pins.forEach((btn, idx) => {
-                    const clip = btn.querySelector('div');
-                    const text = btn.querySelector('span');
-                    if (idx === activeIndex) {
-                        clip.classList.add('bg-accent', '-translate-y-0.5', 'shadow-md');
-                        clip.classList.remove('bg-[#d4a373]');
-                        text.classList.add('text-accent');
-                        text.classList.remove('text-primary/40');
-                    } else {
-                        clip.classList.remove('bg-accent', '-translate-y-0.5', 'shadow-md');
-                        clip.classList.add('bg-[#d4a373]');
-                        text.classList.remove('text-accent');
-                        text.classList.add('text-primary/40');
-                    }
-                });
+                const maxScroll = expCarousel.scrollWidth - expCarousel.clientWidth;
+                const currentScroll = expCarousel.scrollLeft;
+                // Progress range: initial width 16.6% (1/6 cards) up to 100%
+                const progress = maxScroll > 0 ? (currentScroll / maxScroll) * 83.4 + 16.6 : 100;
+                expCarouselProgress.style.width = `${progress}%`;
             });
         }
 
